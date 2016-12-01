@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import { MainMenu } from './components/menu/app.mainmenu';
 
 @Component({
-  selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+  selector: 'curso-app',
+  templateUrl: 'app/curso-app.html',
+  styleUrls: ['app/curso-app.css']
 })
 export class AppComponent  { name = 'Angular'; }
