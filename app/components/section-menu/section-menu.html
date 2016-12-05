@@ -1,0 +1,18 @@
+<div class="section-menu">
+  {{menuType}}
+  <ul id="level1">
+    <li *ngFor="let menuItem of menuItems"  >
+      <!-- <div *ngIf="isItemValid(menuItem.id)">-->
+        <div (click)="changeRoute(menuItem.id)">
+          {{menuItem.section}}
+        </div>
+        <ul id="level2">
+          <li *ngFor="let subSection of menuItem.subSections" [class.mini]="subSection.mini">
+            {{subSection.text}}
+          </li>
+        </ul>
+
+      <!-- </div> -->
+    </li>
+  </ul>
+</div>

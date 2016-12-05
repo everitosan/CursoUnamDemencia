@@ -1,0 +1,30 @@
+  {
+    "data": [
+      {
+        "section": "Inicio",
+        "id": "/"
+      }, {
+        "section": "Presentación",
+        "id":"presentacion"
+      }, {
+        "section": "Introducción",
+        "id":"introduccion",
+        "subSections" : [
+          {
+            "text": "El cuidado de las personas envejecidas frágiles y con demencia.",
+            "mini": true
+          }, {
+            "text": "Objetivo"
+          }, {
+            "text": "Instrucciones"
+          }
+        ]
+      }, {
+        "section": "Demencia y fraglidad",
+        "id": "demenciayfragilidad"
+      }, {
+        "section": "Cuidados fisicos",
+        "id": "cuidadosfisicos"
+      }
+    ]
+}

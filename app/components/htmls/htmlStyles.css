@@ -1,0 +1,56 @@
+.spacer {
+  height: 80px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 578px;
+}
+
+#mainInfo {
+  font-family: 'soberana_sanslight';
+  padding: 0 1em;
+  overflow-y: scroll;
+  height: 100%;
+  flex: 1.7;
+}
+
+#mainImage {
+  flex: 1;
+  text-align: center;
+}
+
+#mainInfo::-webkit-scrollbar {
+  width: 1em;
+}
+#mainInfo::-webkit-scrollbar-track {
+  background: #E9E8E2;
+}
+#mainInfo::-webkit-scrollbar-thumb {
+  background-color: #B2B2B2;
+}
+
+footer {
+  text-align: right;
+  padding-top: 0.5em;
+}
+
+footer img {
+  width: 100%;
+}
+footer .section {
+  background: url(../img/bandera.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: auto 100%;
+  text-transform: capitalize;
+  font-family: 'soberana_titularregular';
+  text-align: right;
+  margin-right: 3em;
+  padding-right: 1em;
+  margin-top: 0.5em;
+  font-size: 1.6em;
+}

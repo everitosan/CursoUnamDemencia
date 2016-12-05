@@ -1,0 +1,51 @@
+.section-menu{
+  width:  377px;
+  position: absolute;
+  top: 70px;
+  right: 0;
+}
+
+.section-menu #level1 {
+  margin: 0 auto;
+  padding: 0;
+  width: 170px;
+}
+
+.section-menu #level1 li {
+  color: white;
+  font-family: 'soberana_sans_lightbold';
+  list-style: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 0.15em 0;
+}
+
+.section-menu #level1 li div {
+  background: url("img/menubg.jpg");
+  background-size: auto 100%;
+  margin: 0 auto;
+  line-height: 37px;
+  height: 37px;
+  width: 100%;
+}
+
+.section-menu #level2 {
+  padding-left: 0px;
+  width: 100%;
+}
+.section-menu #level2 li {
+  background: url("img/bajomenu.jpg");
+  font-family: 'soberana_sanslight';
+  text-align: left;
+  padding-left: 20px;
+  height: 30px;
+  font-size: 0.7em;
+  color: black;
+  line-height: 30px;
+  margin: 2px 0;
+}
+
+.section-menu #level2 li.mini {
+  line-height: 16px;
+  font-size: 0.45em;
+}

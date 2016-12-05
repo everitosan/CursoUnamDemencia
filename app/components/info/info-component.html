@@ -1,1 +1,17 @@
-<h1> Info Component </h1>
+<div class="spacer">
+
+</div>
+
+<div class="content">
+  <div id="mainInfo" [innerHTML]="mainInfo"></div>
+  <section-menu [type]="type" (onMenuItem)="onMenuItem($event)"> </section-menu>
+</div>
+
+
+
+<footer>
+  <img src="img/pr4.png" alt="foot">
+  <div class="section">
+    {{title}}
+  </div>
+</footer>
