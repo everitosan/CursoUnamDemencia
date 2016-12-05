@@ -1,7 +1,13 @@
 #reel {
   overflow: hidden;
+  display: flex;
+  height: 200px;
 }
 
 #reel img{
-  width: 200%
+  transition: all linear .55s;
+  flex: 1;
+  width: 200%;
+  position: absolute;
+  left: 0;
 }
