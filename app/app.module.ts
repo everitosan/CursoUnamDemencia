@@ -9,6 +9,7 @@ import { InfoComponent } from './components/info/info-component';
 import { HomeComponent } from './components/home/HomeComponent';
 import { SliderComponent } from './components/slider/slider-component';
 import { SectionMenu } from './components/section-menu/section-menu.component';
+import { Linker } from './components/linker/linker.component';
 
 //Content components
 import {IntroduccionComponent} from './components/htmls/introduccion/Introduccion.component';
@@ -38,6 +39,7 @@ import {appRoutes} from './routes';
     HomeComponent,
     SliderComponent,
     SectionMenu,
+    Linker,
     IntroduccionComponent,
     PresentacionComponent,
     DemenciaComponent,
