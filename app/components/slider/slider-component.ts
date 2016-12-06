@@ -69,7 +69,7 @@ export class SliderComponent {
     let firstImage = this.element.nativeElement.querySelector("img");
     let cloned = firstImage.cloneNode(false);
 
-    cloned.style.left = (window.innerWidth *2 + dif + 20)  + "px";
+    cloned.style.left = (window.innerWidth *2 + dif - 1)  + "px";
     cloned.style.transform ="";
     container.appendChild(cloned);
   }
