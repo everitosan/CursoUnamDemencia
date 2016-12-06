@@ -8,7 +8,7 @@
         </div>
         <ul id="level2">
           <li *ngFor="let subSection of menuItem.subSections" [class.mini]="subSection.mini">
-            {{subSection.text}}
+            <linker href="#{{subSection.href}}"> {{subSection.text}}</linker>
           </li>
         </ul>
 
