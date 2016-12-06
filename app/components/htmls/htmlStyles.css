@@ -1,5 +1,7 @@
 .spacer {
+  box-sizing: border-box;
   height: 80px;
+  padding: 2em 1em;
   width: 100%;
 }
 
@@ -18,7 +20,13 @@
   height: 100%;
   flex: 1.7;
 }
-
+#mainInfo .note {
+  border: 1px solid #333;
+  box-sizing: border-box;
+  margin: 0.5em 0;
+  padding: 0 0.5em;
+  font-family: 'soberana_sansbold';
+}
 #mainInfo::-webkit-scrollbar {
   width: 1em;
 }
@@ -46,6 +54,31 @@ ul.numbered {
 
 ul.lettered{
   list-style-type: lower-latin;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, td {
+  border: 1px solid black;
+}
+
+table td[colspan="2"] {
+  text-align: center;
+}
+
+table td.title {
+  background: #B5C7E6;
+  color: white;
+}
+
+table td {
+  width: 50%;
+  vertical-align: top;
+}
+table td.center {
+  text-align: center;
 }
 
 footer {

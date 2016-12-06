@@ -21,7 +21,24 @@
         ]
       }, {
         "section": "Demencia y fraglidad",
-        "id": "demenciayfragilidad"
+        "id": "demenciayfragilidad",
+        "subSections": [
+          {
+            "text": "¿Qué es la Demencia? ",
+            "href":"demencia"
+          }, {
+            "text": "¿Qué es la Enfermedad de Alzheimer?",
+            "href": "alzheimer",
+            "mini": true
+          }, {
+            "text": "¿Qué es la Enfermedad de Parkinson?",
+            "href": "parkinson",
+            "mini": true
+          }, {
+            "text": "¿Qué es la Fragilidad?",
+            "href":"fragilidad"
+          }
+        ]
       }, {
         "section": "Cuidados fisicos",
         "id": "cuidadosfisicos"
