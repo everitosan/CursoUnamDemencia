@@ -5,7 +5,6 @@ import { HttpModule } from '@angular/http';
 //Components
 import { AppComponent }  from './app.component';
 import { MainMenu } from './components/menu/app.mainmenu';
-import { InfoComponent } from './components/info/info-component';
 import { HomeComponent } from './components/home/HomeComponent';
 import { SliderComponent } from './components/slider/slider-component';
 import { SectionMenu } from './components/section-menu/section-menu.component';
@@ -37,7 +36,6 @@ import {appRoutes} from './routes';
   declarations: [
     AppComponent,
     MainMenu,
-    InfoComponent,
     HomeComponent,
     SliderComponent,
     SectionMenu,
