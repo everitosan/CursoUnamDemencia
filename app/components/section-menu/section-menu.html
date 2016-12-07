@@ -1,8 +1,6 @@
 <div class="section-menu">
-  {{menuType}}
   <ul id="level1">
     <li *ngFor="let menuItem of menuItems"  >
-      <!-- <div *ngIf="isItemValid(menuItem.id)">-->
         <div (click)="changeRoute(menuItem.id)">
           {{menuItem.section}}
         </div>
@@ -11,8 +9,6 @@
             <linker href="#{{subSection.href}}"> {{subSection.text}}</linker>
           </li>
         </ul>
-
-      <!-- </div> -->
     </li>
   </ul>
 </div>

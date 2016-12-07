@@ -1,5 +1,5 @@
-import {Component, Input, Output, EventEmitter} from '@angular/core';
-import {Router} from '@angular/router';
+import {Component, Output, EventEmitter} from '@angular/core';
+import {Router, ActivatedRoute} from '@angular/router';
 import {SectionMenuService} from '../../services/section-menu.service';
 import {MenuItem} from '../../models/menu-item';
 
@@ -9,15 +9,17 @@ import {MenuItem} from '../../models/menu-item';
   styleUrls: ['app/components/section-menu/section-menu.css']
 })
 export class SectionMenu {
-  @Input('type') menuType: string;
+  private menuType: string;
   @Output() onMenuItem = new EventEmitter();
 
   private founded: boolean = false;
 
   menuItems: MenuItem[];
+
   constructor(
     private menuService: SectionMenuService,
-    private router: Router
+    private router: Router,
+    private route: ActivatedRoute
   ) {
 
   }
@@ -35,8 +37,22 @@ export class SectionMenu {
     }
     return false;
   }
+
   ngOnInit() {
+    this.menuType = this.router.url.substring( 1, this.router.url.length );
+
     this.menuService.getMenu()
-      .subscribe( menuItems => this.menuItems = menuItems);
+      .subscribe( menuItems => {
+        let founded = false;
+        this.menuItems = <MenuItem[]>menuItems.filter(item => {
+          if(!founded) {
+            if(this.menuType == item.id) {
+              founded = true;
+            }
+            return true;
+          }
+          return false;
+        });
+      });
   }
 }

@@ -32,7 +32,13 @@
 .section-menu #level2 {
   padding-left: 0px;
   width: 100%;
+  display: none;
 }
+
+.section-menu #level1 li:last-child #level2{
+  display: block;
+}
+
 .section-menu #level2 li {
   background: url("img/bajomenu.jpg");
   font-family: 'soberana_sanslight';
