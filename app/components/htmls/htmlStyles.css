@@ -60,7 +60,7 @@ table {
     border-collapse: collapse;
 }
 
-table, td {
+table, td, th {
   border: 1px solid black;
 }
 
@@ -71,6 +71,10 @@ table td[colspan="2"] {
 table td.title {
   background: #B5C7E6;
   color: white;
+}
+
+table.for4 td {
+  width: 25%;
 }
 
 table td {
