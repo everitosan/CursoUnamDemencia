@@ -17,6 +17,7 @@ import {IntroduccionComponent} from './components/htmls/introduccion/Introduccio
 import {PresentacionComponent} from './components/htmls/presentacion/Presentacion.component';
 import {DemenciaComponent} from './components/htmls/demenciayfragilidad/Demencia.component';
 import {CuidadosComponent} from './components/htmls/cuidadosfisicos/Cuidados.component';
+import {AyudasComponent} from './components/htmls/ayudastecnicas/ayudas.component';
 
 //Services
 import {InfoDataService} from './services/info-data.service';
@@ -45,7 +46,8 @@ import {appRoutes} from './routes';
     IntroduccionComponent,
     PresentacionComponent,
     DemenciaComponent,
-    CuidadosComponent
+    CuidadosComponent,
+    AyudasComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [InfoDataService, SectionMenuService]

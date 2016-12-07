@@ -6,11 +6,13 @@ import {IntroduccionComponent} from './components/htmls/introduccion/Introduccio
 import {PresentacionComponent} from './components/htmls/presentacion/Presentacion.component';
 import {DemenciaComponent} from './components/htmls/demenciayfragilidad/Demencia.component';
 import {CuidadosComponent} from './components/htmls/cuidadosfisicos/Cuidados.component';
+import {AyudasComponent} from './components/htmls/ayudastecnicas/ayudas.component';
 
 export const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'presentacion', component: PresentacionComponent},
   {path: 'introduccion', component: IntroduccionComponent},
   {path: 'demenciayfragilidad', component: DemenciaComponent},
-  {path: 'cuidadosfisicos', component: CuidadosComponent}
+  {path: 'cuidadosfisicos', component: CuidadosComponent},
+  {path: 'ayudastecnicas', component: AyudasComponent}
 ];

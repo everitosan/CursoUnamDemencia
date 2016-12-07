@@ -12,11 +12,14 @@
         "subSections" : [
           {
             "text": "El cuidado de las personas envejecidas frágiles y con demencia.",
-            "mini": true
+            "mini": true,
+            "href": "cuidado"
           }, {
-            "text": "Objetivo"
+            "text": "Objetivo",
+            "href": "objetivo"
           }, {
-            "text": "Instrucciones"
+            "text": "Instrucciones",
+            "href": "instrucciones"
           }
         ]
       }, {
@@ -41,7 +44,23 @@
         ]
       }, {
         "section": "Cuidados fisicos",
-        "id": "cuidadosfisicos"
+        "id": "cuidadosfisicos",
+        "subSections": [
+          {
+            "text": "Cuidados generales y específicos",
+            "href": "generalesyespecificos",
+            "mini": true
+          }, {
+            "text": "Cuidados generales",
+            "href": "generales"
+          }, {
+            "text": "Cuidados específicos",
+            "href": "especificos"
+          }
+        ]
+      }, {
+        "section": "Ayudas técnicas",
+        "id": "ayudastecnicas"
       }
     ]
 }
