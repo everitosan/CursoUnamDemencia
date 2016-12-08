@@ -77,6 +77,25 @@ table.for4 td {
   width: 25%;
 }
 
+table.cronograma{
+  width: 100% ;
+  text-align: center;
+}
+
+table.cronograma td{
+  width: 20%;
+}
+table.cronograma .bold{
+  background: #5E9CD3;
+}
+table.cronograma tr{
+  background: #D7E6F3;
+}
+table.cronograma tr.bold{
+  background: #AECCE9;
+}
+
+
 table td {
   width: 50%;
   vertical-align: top;

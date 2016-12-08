@@ -28,7 +28,9 @@
   height: 37px;
   width: 100%;
 }
-
+.section-menu #level1 li div.mini {
+  line-height: 17px;
+}
 .section-menu #level2 {
   padding-left: 0px;
   width: 100%;

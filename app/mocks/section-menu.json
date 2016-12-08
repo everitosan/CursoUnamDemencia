@@ -61,6 +61,58 @@
       }, {
         "section": "Ayudas técnicas",
         "id": "ayudastecnicas"
+      },{
+        "section": "Cuidados del cuidador",
+        "mini": true,
+        "id": "cuidador",
+        "subSections": [
+          {
+            "text": "¿Qué es cuidar y quién es el cuidador?",
+            "href": "cuidar",
+            "mini": true
+          }, {
+            "text": "¿Por qué es importante el cuidado de la persona que cuida?",
+            "mini": true,
+            "href": "importante"
+          }, {
+            "mini": true,
+            "text": "¿Cómo puedo cuidarme mejor si soy una persona que cuida?",
+            "href": "cuidarme"
+          }, {
+            "mini": true,
+            "text": "Ejercicios físicos pensados para ti.",
+            "href": "ejerciciosfisicos"
+          }, {
+            "mini": true,
+            "text": "Ejercicios de relajación pensados para ti.",
+            "href": "ejercicios"
+          },  {
+            "text": "La salud emocional.",
+            "href": "salud"
+          }
+        ]
+      }, {
+        "section": "Recomendaciones y sugerencias",
+        "mini": true,
+        "id": "recomendaciones",
+        "subSections": [
+          {
+            "text": "Cronograma semanal",
+            "href": "cronograma"
+          },{
+            "text": "¿Qué debo hacer en caso de…? ",
+            "href": "encasode",
+            "mini": true
+
+          }, {
+            "text": "Adaptaciones del entorno. ",
+            "href": "adaptaciones"
+          }, {
+            "text": "Elaboración de las almohadillas de prevención de úlceras.",
+            "href": "almohadillas",
+            "mini": true
+          }
+        ]
       }
     ]
 }
