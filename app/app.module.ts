@@ -10,6 +10,7 @@ import { SliderComponent } from './components/slider/slider-component';
 import { SectionMenu } from './components/section-menu/section-menu.component';
 import { Linker } from './components/linker/linker.component';
 import { SoundComponent } from './components/audio/audio.component';
+import { VideoComponent } from './components/video/video.component';
 
 //Content components
 import {IntroduccionComponent} from './components/htmls/introduccion/Introduccion.component';
@@ -43,6 +44,7 @@ import {appRoutes} from './routes';
     SectionMenu,
     Linker,
     SoundComponent,
+    VideoComponent,
     IntroduccionComponent,
     PresentacionComponent,
     DemenciaComponent,
