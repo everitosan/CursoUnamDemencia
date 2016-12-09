@@ -14,7 +14,6 @@ export class Linker {
   scrollTo() {
     let target = <HTMLElement>document.querySelector(this.href);
     if (target !== null) {
-      //debugger;
       let top =  target.offsetTop - 80;
       this.scrollEvent.emit();
       let parent = document.querySelector("#mainInfo");
