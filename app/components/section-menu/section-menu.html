@@ -1,16 +1,21 @@
 <div class="section-menu">
   <ul id="level1">
-    <li *ngFor="let menuItem of menuItems"  >
-        <div (click)="changeRoute(menuItem.id)" [class.mini]="menuItem.mini">
+    <li *ngFor="let menuItem of menuItems;"  >
+        <div (click)="changeRoute(menuItem.id)" [class.mini]="menuItem.mini" >
           {{menuItem.section}}
         </div>
         <ul id="level2">
           <li *ngFor="let subSection of menuItem.subSections" [class.mini]="subSection.mini">
-            <linker href="#{{subSection.href}}"> 
+            <linker href="#{{subSection.href}}">
               {{subSection.text}}
             </linker>
           </li>
         </ul>
+    </li>
+    <li [hidden]="!showNext">
+      <div (click)="changeRoute(nextItem.id)" [class.mini]="nextItem.mini" >
+        {{nextItem.section}}
+      </div>
     </li>
   </ul>
 </div>

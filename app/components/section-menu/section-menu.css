@@ -37,9 +37,10 @@
   display: none;
 }
 
-.section-menu #level1 li:last-child #level2{
+.section-menu #level1 li:nth-last-child(2) #level2 {
   display: block;
 }
+
 
 .section-menu #level2 li {
   background: url("img/bajomenu.jpg");

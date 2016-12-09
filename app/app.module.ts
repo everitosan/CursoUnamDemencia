@@ -11,6 +11,7 @@ import { SectionMenu } from './components/section-menu/section-menu.component';
 import { Linker } from './components/linker/linker.component';
 import { SoundComponent } from './components/audio/audio.component';
 import { VideoComponent } from './components/video/video.component';
+import { Scroller } from './components/scroller/scroller.component';
 
 //Content components
 import {IntroduccionComponent} from './components/htmls/introduccion/Introduccion.component';
@@ -24,7 +25,7 @@ import {RecomendacionesComponent} from './components/htmls/recomendacionesysuger
 //Services
 import {InfoDataService} from './services/info-data.service';
 import {SectionMenuService} from './services/section-menu.service';
-
+import {MenuScrollerComunicator} from './services/menu-scroller-connection.service';
 
 //Routes
 import { RouterModule } from '@angular/router';
@@ -45,6 +46,7 @@ import {appRoutes} from './routes';
     Linker,
     SoundComponent,
     VideoComponent,
+    Scroller,
     IntroduccionComponent,
     PresentacionComponent,
     DemenciaComponent,
@@ -54,6 +56,6 @@ import {appRoutes} from './routes';
     RecomendacionesComponent
   ],
   bootstrap: [ AppComponent ],
-  providers: [InfoDataService, SectionMenuService]
+  providers: [InfoDataService, SectionMenuService, MenuScrollerComunicator]
 })
 export class AppModule { }
