@@ -6,6 +6,7 @@ import {Component, Input, ElementRef} from '@angular/core';
 })
 
 export class SoundComponent {
+  isPlaying: boolean = false;
   @Input('src') src: string;
 
   constructor(
@@ -15,6 +16,12 @@ export class SoundComponent {
   }
 
   playSound() {
-    this.element.nativeElement.querySelector("audio").play();
+    if(!this.isPlaying) {
+      this.element.nativeElement.querySelector("audio").play();
+      this.isPlaying = true;
+    } else {
+      this.element.nativeElement.querySelector("audio").pause();
+      this.isPlaying = false;
+    }
   }
 };
