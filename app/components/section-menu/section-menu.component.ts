@@ -48,7 +48,7 @@ export class SectionMenu {
     this.menuService.getMenu()
       .subscribe( menuItems => {
         let founded = false;
-        let finalIndex;
+        let finalIndex: number;
 
         this.menuItems = <MenuItem[]>menuItems.filter((item, i) => {
           if(!founded) {
