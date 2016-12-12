@@ -22,7 +22,6 @@ export class SliderComponent {
   }
 
   ngAfterViewInit() {
-    let _self = this;
     this.initSlider();
     this.moveSlider();
   }
