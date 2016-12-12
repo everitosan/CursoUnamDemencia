@@ -10,6 +10,6 @@ export class VideoComponent{
   @Input('src') src: string;
 
   ngOnInit(){
-    console.log(this.src);
+    //console.log(this.src);
   }
 };
