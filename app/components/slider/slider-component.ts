@@ -19,30 +19,35 @@ export class SliderComponent {
     if(this.speed === undefined) {
       this.speed = "50";
     }
-  }
 
-  ngAfterViewInit() {
     this.initSlider();
-    this.moveSlider();
+    
   }
 
   initSlider() {
+    let _self = this;
     this.reel = this.element.nativeElement.querySelector("#reel");
 
-    this.cloneFirst();
-    this.reel.style.width = (this.reel.children.length * window.innerWidth) +"px";
+    this.reel.querySelector("img").onload = function() {
+      _self.cloneFirst(); 
+      _self.reel.style.width = (_self.reel.children.length * window.innerWidth) +"px";
+      _self.moveSlider();
+    };
+
   }
 
-  moveSlider() {
+  moveSlider() {  
     let _self = this;
     let firstImage = this.element.nativeElement.querySelector("img");
-    let difference = firstImage.getBoundingClientRect().left - (window.innerWidth*-2);
+    let difference = (firstImage.width) - (firstImage.getBoundingClientRect().left*-1);
 
     if ( difference < 0 ) {
       this.reel.removeChild(firstImage);
       this.cloneFirst(difference);
     }
+
     this.triggerMovement();
+    
     setTimeout(function() {
       requestAnimationFrame(_self.moveSlider.bind(_self));
     }, 500 );
@@ -59,18 +64,17 @@ export class SliderComponent {
 
   }
 
-  removeFirst() {
-
-  }
-
   cloneFirst(dif: any = 0){
     let container = this.reel;
     let firstImage = this.element.nativeElement.querySelector("img");
     let cloned = firstImage.cloneNode(false);
 
-    cloned.style.left = (window.innerWidth *2 + dif - 1)  + "px";
-    cloned.style.transform ="";
+    cloned.style.left = (firstImage.width)  + "px";
+    cloned.style.transform = "";
+    if(dif !== 0) cloned.style.transform ="translate3d("+dif+"px, 0, 0)";
+
     container.appendChild(cloned);
+    //debugger;
   }
 
   getActualTranslate(img: any) {
