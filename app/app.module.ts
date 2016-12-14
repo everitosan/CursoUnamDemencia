@@ -12,6 +12,7 @@ import { Linker } from './components/linker/linker.component';
 import { SoundComponent } from './components/audio/audio.component';
 import { VideoComponent } from './components/video/video.component';
 import { Scroller } from './components/scroller/scroller.component';
+import { LightBox } from './components/lightbox/lightbox.component';
 
 //Content components
 import {IntroduccionComponent} from './components/htmls/introduccion/Introduccion.component';
@@ -47,6 +48,7 @@ import {appRoutes} from './routes';
     SoundComponent,
     VideoComponent,
     Scroller,
+    LightBox,
     IntroduccionComponent,
     PresentacionComponent,
     DemenciaComponent,

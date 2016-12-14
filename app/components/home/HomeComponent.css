@@ -36,7 +36,7 @@
   text-align: right;
 }
 
-.footer span {
+.footer .text {
   position: relative;
   top: 84px
 }

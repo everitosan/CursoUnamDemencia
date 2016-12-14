@@ -1,0 +1,15 @@
+<div class="trigger" *ngIf="hasTextTrigger()">
+  <span (click)="toggleBox()" > 
+    {{trigger}}
+  </span>  
+</div>
+
+<div class="Box" [hidden]="!isShown">
+  <div class="current" >
+    <ng-content></ng-content>
+  </div>
+  <img class="close" src="img/p-cerrar.png" (click)="toggleBox()" >
+  <img class="right" src="img/p-derecha.png" (click)="next()" [hidden]="hasOneChild()">
+  <img class="left" src="img/p-izquierda.png" (click)="prev()"  [hidden]="hasOneChild()">
+
+</div>

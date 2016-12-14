@@ -1,0 +1,42 @@
+:host, .trigger{
+  cursor: pointer;
+  display: inline;
+}
+
+.Box{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.current {
+  text-align: center;
+}
+
+.current {
+  padding: 3em;
+}
+
+.close {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.right {
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  right: 10px;
+}
+
+.left {
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  left: 10px;
+}
