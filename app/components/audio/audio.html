@@ -1,4 +1,6 @@
-<img src="img/sound.png" (click)="playSound()" alt="sound">
+<img *ngIf="isIconColor('gray')" src="img/sound.png" (click)="playSound()" alt="sound">
+<img *ngIf="isIconColor('red')" src="img/sound 2.png" (click)="playSound()" alt="sound">
+
 <audio controls>
   <source src="audios/{{src}}.mp3" type="audio/mpeg">
   <source src="audios/{{src}}.ogg"  type="audio/ogg">
