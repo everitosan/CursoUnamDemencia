@@ -74,7 +74,6 @@ export class SliderComponent {
     if(dif !== 0) cloned.style.transform ="translate3d("+dif+"px, 0, 0)";
 
     container.appendChild(cloned);
-    //debugger;
   }
 
   getActualTranslate(img: any) {
