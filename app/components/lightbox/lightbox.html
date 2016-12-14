@@ -1,8 +1,14 @@
-<div class="trigger" *ngIf="hasTextTrigger()">
+<div class="trigger" *ngIf="isTriggerTypeOf('text')">
   <span (click)="toggleBox()" > 
     {{trigger}}
   </span>  
 </div>
+
+<div class="trigger" *ngIf="isTriggerTypeOf('image')">
+  <img [src]="trigger"  (click)="toggleBox()">
+    
+</div>
+
 
 <div class="Box" [hidden]="!isShown">
   <div class="current" >

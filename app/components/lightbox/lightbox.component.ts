@@ -26,8 +26,8 @@ export class LightBox{
      this.allImages[this.index].style.display= "inline-block";
   }
 
-  hasTextTrigger() {
-     return this.mode === "text";
+  isTriggerTypeOf(mode: string) {
+     return this.mode === mode;
   }
 
   toggleBox() {

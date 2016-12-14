@@ -3,6 +3,12 @@
   display: inline;
 }
 
+.trigger img {
+  margin: 0 auto;
+  display: block;
+  width: 90%;
+}
+
 .Box{
   position: fixed;
   top: 0;
@@ -10,6 +16,7 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
 }
 
 .current {
@@ -25,6 +32,7 @@
   position: fixed;
   top: 0;
   right: 0;
+
 }
 
 .right {
